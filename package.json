@@ -1,0 +1,13 @@
+{
+  "name": "umbra-el-ultimo-faro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && python3 scripts/build.py",
+    "typecheck": "tsc --noEmit",
+    "test": "python3 -m unittest discover -s tests -v && node --test tests/*.test.mjs",
+    "start": "python3 server.py"
+  },
+  "devDependencies": {"typescript": "^5.9.3"}
+}
